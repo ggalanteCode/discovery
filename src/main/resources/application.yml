@@ -1,0 +1,16 @@
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+server:
+  port: 8761
+spring:
+ config:
+   import:
+    - optional:configserver:http://localhost:8088
+ application:
+  name: discovery
+ cloud:
+  config:
+   import-check:
+    enabled: false
