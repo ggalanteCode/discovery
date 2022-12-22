@@ -1,5 +1,9 @@
 eureka:
   client:
+    
+    ### IL DISCOVERY SERVER NON DEVE REGISTRARSI COL DISCOVERY PERCHE' E' 
+    ### ESSO STESSO IL DISCOVERY
+    
     fetch-registry: false
     register-with-eureka: false
 server:
