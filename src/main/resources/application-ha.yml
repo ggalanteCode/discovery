@@ -5,10 +5,10 @@ eureka:
       fetch-registry: false
       register-with-eureka: false
 spring:
-   cloud:
-    config:
-     import-check:
-      enabled: false
+   #cloud:
+    #config:
+     #import-check:
+      #enabled: false
    config:
     import:
     - optional:configserver:http://localhost:8088
